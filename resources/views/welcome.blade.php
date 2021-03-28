@@ -6,8 +6,6 @@
         <div class="container d-flex align-items-center">
 
             <h1 class="logo mr-auto"><a href="index.html">Mercedes Models Management</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-{{--            <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>--}}
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
@@ -508,7 +506,7 @@
 
                 <div class="col-lg-8 mt-5 mt-lg-0">
 
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form php-form">
+                    <form action="forms/contact.php" method="post" role="form" id="php-email-form" class="php-form">
                         <div class="form-row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"

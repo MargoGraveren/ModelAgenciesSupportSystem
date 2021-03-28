@@ -6,10 +6,10 @@
 !(function($) {
   "use strict";
 
-  $('php-email-form.php-email-form').submit(function(e) {
+  $('form#php-email-form').submit(function(e) {
     e.preventDefault();
 
-    var f = $(this).find('.php-email-form-group'),
+    var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
@@ -101,7 +101,7 @@
 
     if( ! action ) {
       this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown().html('The php-email-form action property is not set!');
+      this_form.find('.error-message').slideDown().html('The form action property is not set!');
       return false;
     }
 
