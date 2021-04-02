@@ -1,39 +1,12 @@
 @extends('master')
 
-<!-- ======= Header ======= -->
-@section('header')
-    <header id="header" class="fixed-top ">
-        <div class="container d-flex align-items-center">
-
-            <h1 class="logo mr-auto"><a href="index.html">Mercedes Models Management</a></h1>
-
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="drop-down"><a href="">Join Us</a>
-                        <ul>
-                            <li><a href="/login">Log In</a></li>
-                            <li><a href="/register">Register</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-        </div>
-    </header>
-@endsection
-
 @section('hero')
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-            <h3>Welcome to <strong>Mercedes Models</strong></h3>
-            <h1>We're Creative Agency</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
+            <h3>Welcome to <strong>Mercedes Models Management</strong></h3>
+            <h1>Join Us and find the perfect match</h1>
+            <h2>We're supporting models and model agencies</h2>
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
     </section><!-- End Hero -->
@@ -47,58 +20,60 @@
             <div class="section-title">
                 <h2>About</h2>
                 <h3>Learn More <span>About Us</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
+                <p>
+                    What is the purpose of Mercedes Models Management?
+                </p>
             </div>
 
             <div class="row content">
                 <div class="col-lg-6">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
+                        Mercedes Models Management is a supportive system for models and model agencies.
                     </p>
-                    <ul>
-                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat
-                        </li>
-                        <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate
-                            velit
-                        </li>
-                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat
-                        </li>
-                    </ul>
+                    <p>
+                        The purpose of the system is to support the organization and manage communication between
+                        modeling agencies and potential cooperation candidates. Its purpose is to clearly and easily
+                        define the principles of the partnership.
+                    </p>
+
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> Join as Model and apply for the perfect campaign!
+                        </li>
+                        <li><i class="ri-check-double-line"></i> Register as Model Agency and find the ideal candidate!
+                        </li>
+                        <li><i class="ri-check-double-line"></i> Establish a long-term cooperation or find a quick
+                            order!
+                        </li>
+                    </ul>
                     <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        It also allows both sides to share their
+                        experience. In addition, this system will have a publicly available rating ranking in order to
+                        select the best candidates for cooperation.
                     </p>
-                    <a href="#" class="btn-learn-more">Learn More</a>
+                    {{--                    <a href="#" class="btn-learn-more">Learn More</a>--}}
                 </div>
             </div>
 
         </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- ======= Offer Section ======= -->
+    <section id="offer" class="offer">
         <div class="container">
 
             <div class="section-title">
-                <h2>Services</h2>
-                <h3>We do offer awesome <span>Services</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
+                <h2>Offer</h2>
+                <h3>We have an awesome <span>Offer</span></h3>
+                <p>What can Mercedes Models Management offer?</p>
             </div>
 
             <div class="row">
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <div class="icon"><i class="bx bx-note"></i></div>
+                        <h4 class="title"><a href="">Create Campaigns</a></h4>
                         <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi</p>
                     </div>
@@ -106,8 +81,8 @@
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                        <div class="icon"><i class="bx bx-user-voice"></i></div>
+                        <h4 class="title"><a href="">Join Campaign</a></h4>
                         <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                             dolore</p>
                     </div>
@@ -115,8 +90,8 @@
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href="">Magni Dolores</a></h4>
+                        <div class="icon"><i class="bx bx-camera"></i></div>
+                        <h4 class="title"><a href="">Create Portfolio</a></h4>
                         <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                             officia</p>
                     </div>
@@ -124,8 +99,8 @@
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        <div class="icon"><i class="bx bx-star"></i></div>
+                        <h4 class="title"><a href="">Leave Rating</a></h4>
                         <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
                             blanditiis</p>
                     </div>
@@ -134,7 +109,7 @@
             </div>
 
         </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Offer Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -143,74 +118,51 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-6 col-6">
                     <div class="icon-box">
-                        <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                        <h3><a href="">Lorem Ipsum</a></h3>
+                        <i class="bx bxs-user" style="color: #ffbb2c;"></i>
+                        <h3><a href="">Create Profile</a></h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <div class="icon-box">
-                        <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                        <h3><a href="">Dolor Sitema</a></h3>
+                        <i class="bx bxs-camera" style="color: #e361ff;"></i>
+                        <h3><a href="">Build Portfolio</a></h3>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
                     <div class="icon-box">
-                        <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                        <h3><a href="">Sed perspiciatis</a></h3>
+                        <i class="bx bxs-note" style="color: #e361ff;"></i>
+                        <h3><a href="">Create Campaigns</a></h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
                     <div class="icon-box">
-                        <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                        <h3><a href="">Magni Dolores</a></h3>
+                        <i class="bx bx-list-ol" style="color: purple;"></i>
+                        <h3><a href="">See Rankings</a></h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
                     <div class="icon-box">
-                        <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                        <h3><a href="">Nemo Enim</a></h3>
+                        <i class="bx bxs-comment-check" style="color: #29cc61;"></i>
+                        <h3><a href="">Accept Candidates</a></h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
                     <div class="icon-box">
-                        <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                        <h3><a href="">Eiusmod Tempor</a></h3>
+                        <i class="bx bxs-photo-album" style="color: #b2904f;"></i>
+                        <h3><a href="">Browse Gallery</a></h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
                     <div class="icon-box">
-                        <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                        <h3><a href="">Midela Teren</a></h3>
+                        <i class="bx bxs-user-voice" style="color: #b20969;"></i>
+                        <h3><a href="">Join Campaign</a></h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
                     <div class="icon-box">
-                        <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-                        <h3><a href="">Pira Neve</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <div class="icon-box">
-                        <i class="ri-anchor-line" style="color: #b2904f;"></i>
-                        <h3><a href="">Dirada Pack</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <div class="icon-box">
-                        <i class="ri-disc-line" style="color: #b20969;"></i>
-                        <h3><a href="">Moton Ideal</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <div class="icon-box">
-                        <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                        <h3><a href="">Verdo Park</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <div class="icon-box">
-                        <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-                        <h3><a href="">Flavor Nivelanda</a></h3>
+                        <i class="bx bxs-star" style="color: #ffbb2c;"></i>
+                        <h3><a href="">Leave Rating</a></h3>
                     </div>
                 </div>
             </div>
@@ -224,10 +176,12 @@
 
             <div class="text-center">
                 <h3>Register Now!</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.</p>
-                <a class="cta-btn" href="#">Register</a>
+                <p> Create a profile and join us as a modeling agency or model. Create a portfolio and join the first
+                    campaigns. It only takes a moment!</p>
+                <p>
+                    We guarantee a wide selection of campaigns and high security.
+                </p>
+                <a class="cta-btn" href="{{ route('register') }}">Register</a>
             </div>
 
         </div>

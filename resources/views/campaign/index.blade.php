@@ -1,9 +1,5 @@
 @extends('master')
 
-@section('header')
-    @include('header')
-@endsection
-
 @section('main')
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -11,9 +7,9 @@
 
             <ol>
                 <li><a href="index.html">Home</a></li>
-                <li>Blog</li>
+                <li>Campaigns</li>
             </ol>
-            <h2>Blog</h2>
+            <h2>Campaigns</h2>
 
         </div>
     </section><!-- End Breadcrumbs -->
@@ -51,7 +47,7 @@
                                         Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta zena prista maraeda talan mas indera.
                                     </p>
                                     <div class="read-more">
-                                        <a href="blog-single.html">Read More</a>
+                                        <a href="/campaign/1">Read More</a>
                                     </div>
                                 </div>
 

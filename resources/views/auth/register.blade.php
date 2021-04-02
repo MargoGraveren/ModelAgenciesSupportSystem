@@ -5,7 +5,7 @@
 @endsection
 
 @section('main')
-    <section id="login" class="contact">
+    <section id="register" class="contact">
         <div class="container">
 
             <div class="section-title">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password_confirmation" id="password_confirmation"
-                           placeholder="Your Password" data-rule="password"
+                           placeholder="Confirm Password" data-rule="password"
                            data-msg="Please enter a valid password"/>
                     <div class="validate"></div>
                 </div>

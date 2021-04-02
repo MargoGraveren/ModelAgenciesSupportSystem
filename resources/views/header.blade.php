@@ -5,18 +5,39 @@
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#services">Services</a></li>
-                <li><a href="/#portfolio">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li class="drop-down active"><a href="">Join Us</a>
-                    <ul>
-                        <li><a id="login-link" href="/login">Log In</a></li>
-                        <li><a href="/register">Register</a></li>
-                    </ul>
-                </li>
-                <li><a href="/#contact">Contact</a></li>
+                @guest()
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#offer">Offer</a></li>
+                    <li><a href="/#portfolio">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="drop-down active"><a href="">Join Us</a>
+                        <ul>
+                            <li><a id="login-link" href="/login">Log In</a></li>
+                            <li><a href="/register">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/#contact">Contact</a></li>
+                @endguest
+                @auth()
+                    <li class="drop-down" ><a href="">Campaigns</a>
+                        <ul>
+                            <li><a href="/campaign">List</a></li>
+                            <li><a href="/campaign/create">Create</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ranking</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li class="drop-down"><a href="">Profile</a>
+                        <ul>
+                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#">Offer</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="{{ route('logout') }}">Logout</a></li>
+                        </ul>
+                    </li>
+
+                @endauth
             </ul>
         </nav><!-- .nav-menu -->
     </div>

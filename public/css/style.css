@@ -570,11 +570,11 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services {
+.offer {
     padding-bottom: 30px;
 }
 
-.services .icon-box {
+.offer .icon-box {
     padding: 60px 30px;
     position: relative;
     overflow: hidden;
@@ -586,7 +586,7 @@ section {
     text-align: center;
 }
 
-.services .icon-box::before {
+.offer .icon-box::before {
     content: '';
     position: absolute;
     background: #FEF2FF;
@@ -598,44 +598,44 @@ section {
     z-index: -1;
 }
 
-.services .icon-box:hover::before {
+.offer .icon-box:hover::before {
     background: #828;
     top: 0;
     border-radius: 0px;
 }
 
-.services .icon {
+.offer .icon {
     margin-bottom: 15px;
 }
 
-.services .icon i {
+.offer .icon i {
     font-size: 48px;
     line-height: 1;
     color: #828;
     transition: all 0.3s ease-in-out;
 }
 
-.services .title {
+.offer .title {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
 }
 
-.services .title a {
+.offer .title a {
     color: #111;
 }
 
-.services .description {
+.offer .description {
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
+.offer .icon-box:hover .title a, .offer .icon-box:hover .description {
     color: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.offer .icon-box:hover .icon i {
     color: #fff;
 }
 
@@ -681,7 +681,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("/assets/img/cta-bg.jpg") center center;
     background-size: cover;
     padding: 60px 0;
 }
@@ -1074,6 +1074,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+    margin-top: 100px;
+}
+
 .contact .info {
     width: 100%;
     background: #fff;
@@ -1226,7 +1230,6 @@ section {
 --------------------------------------------------------------*/
 #login {
     height: 100%;
-    margin-top: 100px;
 }
 
 /*--------------------------------------------------------------
