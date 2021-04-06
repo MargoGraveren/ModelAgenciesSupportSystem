@@ -5,6 +5,10 @@
 @endsection
 
 @section('main')
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+    </section><!-- End Breadcrumbs -->
+
     <section id="login" class="contact">
         <div class="container">
 

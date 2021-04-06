@@ -8,20 +8,20 @@
         <div class="container">
             <ol>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="/campaign">Campaigns</a></li>
-                <li><a href="/campaign">Create Campaign</a></li>
+                <li><a href="/campaign">Gallery</a></li>
+                <li><a href="/campaign">Create Album</a></li>
             </ol>
-            <h2>Create Campaigns</h2>
+            <h2>Create Album</h2>
         </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Create Campaign Form ======= -->
-    <section id="create_campaign" class="contact">
+    <!-- ======= Create Album Form ======= -->
+    <section id="create_album" class="contact">
         <div class="container">
 
             <div class="section-title">
-                <h2>Agency</h2>
-                <h3>Create New <span>Campaign</span></h3>
+                <h2>Gallery</h2>
+                <h3>Create New <span>Album</span></h3>
             </div>
         </div>
 

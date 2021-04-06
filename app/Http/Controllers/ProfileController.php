@@ -2,30 +2,30 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Campaign;
+use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
-class CampaignController extends Controller
+class ProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return View::make('campaign.index');
+        //
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        return View::make('campaign.create');
+        //
     }
 
     /**
@@ -42,21 +42,21 @@ class CampaignController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Campaign  $advertisement
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @param  \App\Models\Profile  $profile
+     * @return \Illuminate\Contracts\View\View
      */
-    public function show(Campaign $advertisement)
+    public function show(Profile $profile)
     {
-        return View::make('campaign.show');
+        return View::make('profile.profile');
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Campaign  $advertisement
+     * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function edit(Campaign $advertisement)
+    public function edit(Profile $profile)
     {
         //
     }
@@ -65,10 +65,10 @@ class CampaignController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Campaign  $advertisement
+     * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Campaign $advertisement)
+    public function update(Request $request, Profile $profile)
     {
         //
     }
@@ -76,10 +76,10 @@ class CampaignController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Campaign  $advertisement
+     * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Campaign $advertisement)
+    public function destroy(Profile $profile)
     {
         //
     }

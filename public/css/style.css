@@ -8,7 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html{
+html {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-main{
+main {
     position: relative;
     min-height: 100vh;
 }
@@ -1074,9 +1074,6 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact{
-    margin-top: 100px;
-}
 
 .contact .info {
     width: 100%;
@@ -1204,7 +1201,7 @@ section {
 }
 
 .contact .php-form button[type="submit"]:hover {
-    background: #d01d3f;
+    background: #cc66cc;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1357,8 +1354,60 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+
+.pagination {
+    color: #816a6e;
+}
+
+.pagination ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.pagination li {
+    border: 1px solid white;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.pagination li.active {
+    background: white;
+}
+
+.pagination li a {
+    color: #aaaaaa;
+    padding: 7px 16px;
+    display: inline-block;
+}
+
+.pagination li.active, .pagination li:hover {
+    background: #828;
+    border: 1px solid #828;
+}
+
+.pagination li.active a, .pagination li:hover a {
+    color: #fff;
+}
+
+.pagination li.disabled {
+    background: #fff;
+    border: 1px solid white;
+}
+
+.pagination li.disabled i {
+    color: #f1f1f1;
+    padding: 10px 16px;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
+
 .blog {
     padding: 40px 0 20px 0;
 }
@@ -1446,7 +1495,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-    background: #d01d3f;
+    background: #cc66cc;
 }
 
 .blog .entry .entry-content h3 {
@@ -1704,52 +1753,6 @@ section {
     background-color: #828;
 }
 
-.blog .blog-pagination {
-    color: #816a6e;
-}
-
-.blog .blog-pagination ul {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-}
-
-.blog .blog-pagination li {
-    border: 1px solid white;
-    margin: 0 5px;
-    transition: 0.3s;
-}
-
-.blog .blog-pagination li.active {
-    background: white;
-}
-
-.blog .blog-pagination li a {
-    color: #aaaaaa;
-    padding: 7px 16px;
-    display: inline-block;
-}
-
-.blog .blog-pagination li.active, .blog .blog-pagination li:hover {
-    background: #828;
-    border: 1px solid #828;
-}
-
-.blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
-    color: #fff;
-}
-
-.blog .blog-pagination li.disabled {
-    background: #fff;
-    border: 1px solid white;
-}
-
-.blog .blog-pagination li.disabled i {
-    color: #f1f1f1;
-    padding: 10px 16px;
-    display: inline-block;
-}
-
 .blog .sidebar {
     padding: 30px;
     margin: 0 0 60px 20px;
@@ -1800,7 +1803,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-    background: #d01d3f;
+    background: #cc66cc;
 }
 
 .blog .sidebar .categories ul {
@@ -2021,7 +2024,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-    background: #d01d3f;
+    background: #cc66cc;
 }
 
 #footer .credits {
@@ -2046,7 +2049,7 @@ section {
 }
 
 #footer .social-links a:hover {
-    background: #d01d3f;
+    background: #cc66cc;
     color: #fff;
     text-decoration: none;
 }

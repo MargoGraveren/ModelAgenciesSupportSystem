@@ -20,15 +20,20 @@
                     <li><a href="/#contact">Contact</a></li>
                 @endguest
                 @auth()
-                    <li class="drop-down" ><a href="">Campaigns</a>
+                    <li class="drop-down"><a href="">Campaigns</a>
                         <ul>
                             <li><a href="/campaign">List</a></li>
                             <li><a href="/campaign/create">Create</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Ranking</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li class="drop-down"><a href="">Profile</a>
+                    <li class="drop-down"><a href="/gallery">Gallery</a>
+                        <ul>
+                            <li><a href="/album/create">Add New</a></li>
+                            <li><a href="#">List</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="/profile">Profile</a>
                         <ul>
                             <li><a href="#">Campaigns</a></li>
                             <li><a href="#">Offer</a></li>

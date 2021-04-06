@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\CampaignController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +23,10 @@ Route::get('/', function () {
 require __DIR__.'/auth.php';
 
 Route::resource('campaign', CampaignController::class)->middleware(['auth']);
+
+Route::resource('album', AlbumController::class)->middleware(['auth']);
+
+Route::resource('profile', ProfileController::class)->middleware(['auth']);
 
 Route::get('/gallery', function (){
     return view('gallery.index');

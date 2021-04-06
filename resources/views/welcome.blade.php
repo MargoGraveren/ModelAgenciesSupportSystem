@@ -96,7 +96,6 @@
                             officia</p>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-star"></i></div>
@@ -105,7 +104,6 @@
                             blanditiis</p>
                     </div>
                 </div>
-
             </div>
 
         </div>
