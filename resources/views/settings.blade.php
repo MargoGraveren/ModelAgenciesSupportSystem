@@ -24,21 +24,17 @@
                         <hr>
                         <h3 class="sidebar-title">General</h3>
                         <hr>
-                        <h5>option</h5>
-                        <h5>option</h5>
-                        <h5>option</h5>
+                        <h6><a href="#">Account Informations</a></h6>
                         <hr>
                         <h3 class="sidebar-title">Security</h3>
                         <hr>
-                        <h5>option</h5>
-                        <h5>option</h5>
-                        <h5>option</h5>
+                        <h6><a href="#">Change Password</a></h6>
+                        <h6><a href="#">Login Activity</a></h6>
                         <hr>
                         <h3 class="sidebar-title">Privacy</h3>
                         <hr>
-                        <h5>option</h5>
-                        <h5>option</h5>
-                        <h5>option</h5>
+                        <h6><a href="#">Blocked Users</a></h6>
+                        <h6><a href="#">Privacy Politics</a></h6>
                         <hr>
                 </div>
             </div>

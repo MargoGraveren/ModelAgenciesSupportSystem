@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Campaign;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 
 class CampaignController extends Controller
@@ -31,18 +33,25 @@ class CampaignController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        //
+        $campaign = new Campaign();
+        $campaign->title = $request->title;
+        $campaign->description = $request->description;
+        $campaign->category = 'category';
+//        Auth::user()->campaign()->save($campaign);
+        $campaign->save();
+
+        return redirect('campaign');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Campaign  $advertisement
+     * @param \App\Models\Campaign $advertisement
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function show(Campaign $advertisement)
@@ -53,7 +62,7 @@ class CampaignController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Campaign  $advertisement
+     * @param \App\Models\Campaign $advertisement
      * @return \Illuminate\Http\Response
      */
     public function edit(Campaign $advertisement)
@@ -64,8 +73,8 @@ class CampaignController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Campaign  $advertisement
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Campaign $advertisement
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Campaign $advertisement)
@@ -76,7 +85,7 @@ class CampaignController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Campaign  $advertisement
+     * @param \App\Models\Campaign $advertisement
      * @return \Illuminate\Http\Response
      */
     public function destroy(Campaign $advertisement)

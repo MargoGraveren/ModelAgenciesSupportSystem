@@ -25,21 +25,22 @@
                     <li><a href="/#contact">Contact</a></li>
                 @endguest
                 @auth()
-                    <li class="drop-down"><a href="">Campaigns</a>
+                    <li class="drop-down"><a>Campaigns</a>
                         <ul>
-                            <li><a href="/campaign">List</a></li>
-                            <li><a href="/campaign/create">Create</a></li>
+                            <li><a href="/campaign">View Campaigns</a></li>
+                            <li><a href="/campaign/create">Create Campaign</a></li>
                         </ul>
                     </li>
                     <li><a href="/ranking">Ranking</a></li>
-                    <li class="drop-down"><a href="/gallery">Gallery</a>
+                    <li class="drop-down"><a>Gallery</a>
                         <ul>
-                            <li><a href="/album/create">Add New</a></li>
-                            <li><a href="#">List</a></li>
+                            <li><a href="/gallery">View Gallery</a></li>
+                            <li><a href="/album/create">Create Album</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="/profile/{{ Auth::user()->id }}">Profile</a>
+                    <li class="drop-down"><a>Profile</a>
                         <ul>
+                            <li><a href="/profile/{{ Auth::user()->id }}">View Profile</a></li>
                             <li><a href="#">Campaigns</a></li>
                             <li><a href="/settings">Settings</a></li>
                             <li><a href="{{ route('logout') }}">Logout</a></li>

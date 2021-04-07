@@ -29,7 +29,7 @@
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')"/>
 
-            <form method="POST" action="#" class="php-form">
+            <form method="POST" action="{{ url('campaign') }}" class="php-form">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" name="title" id="title"
