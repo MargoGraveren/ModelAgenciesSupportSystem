@@ -21,9 +21,11 @@
                 <div class="col-lg-4">
                     <div class="sidebar">
                         <h3 class="sidebar-title">{{ Auth::user()->name }}</h3>
+                        <hr>
                         <div class="profile-img">
                             <img src="{{ asset('assets/img/blog-1.jpg') }}" alt="" class="img-fluid">
                         </div>
+                        <hr>
                         <div class="info">
                             <p>
                                 szczegóły
@@ -41,15 +43,17 @@
                     </div>
                 </div>
                 <div class="col-lg-8 profile-content">
-                    <div class="pagination">
-                        <ul class="justify-content-center">
-                            <li><a href="#">gallery</a></li>
-                            <li class="active"><a href="#">campaigns</a></li>
-                            <li><a href="#">details</a></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="filters">
+                                <li data-filter="*" class="filter-active">Gallery</li>
+                                <li data-filter=".filter-app">Campaigns</li>
+                                <li data-filter=".filter-card">Details</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="">
-                        reszta
+                        @include('profile.portfolio')
                     </div>
                 </div>
             </div>

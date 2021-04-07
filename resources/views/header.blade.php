@@ -1,7 +1,12 @@
 <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo mr-auto"><a href="index.html">Mercedes Models Management</a></h1>
+        @guest()
+            <h1 class="logo mr-auto"><a href="/">Mercedes Models Management</a></h1>
+        @endguest
+        @auth()
+            <h1 class="logo mr-auto"><a href="/campaign">Mercedes Models Management</a></h1>
+        @endauth
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
