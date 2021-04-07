@@ -4,6 +4,7 @@ use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +30,13 @@ Route::resource('album', AlbumController::class)->middleware(['auth']);
 Route::resource('profile', ProfileController::class)->middleware(['auth']);
 
 Route::get('/gallery', function (){
-    return view('gallery.index');
-});
+    return View::make('gallery.index');
+})->middleware(['auth']);
+
+Route::get('/settings', function (){
+    return View::make('settings');
+})->middleware(['auth']);
+
+Route::get('/ranking', function (){
+    return View::make('ranking.index');
+})->middleware(['auth']);

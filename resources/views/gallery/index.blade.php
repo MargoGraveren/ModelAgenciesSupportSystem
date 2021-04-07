@@ -18,12 +18,12 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
 
-            <div class="section-title">
-                <h2>Gallery</h2>
-                <h3>Check our Models and Agencies <span>Portfolio</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
-            </div>
+{{--            <div class="section-title">--}}
+{{--                <h2>Gallery</h2>--}}
+{{--                <h3>Check our Models and Agencies <span>Portfolio</span></h3>--}}
+{{--                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque--}}
+{{--                    vitae autem.</p>--}}
+{{--            </div>--}}
 
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">

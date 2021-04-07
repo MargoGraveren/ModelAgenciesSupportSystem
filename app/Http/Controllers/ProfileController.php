@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Profile;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -45,9 +46,9 @@ class ProfileController extends Controller
      * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Contracts\View\View
      */
-    public function show(Profile $profile)
+    public function show(User $user)
     {
-        return View::make('profile.profile');
+        return View::make('profile.profile')->with('user', $user);
     }
 
     /**

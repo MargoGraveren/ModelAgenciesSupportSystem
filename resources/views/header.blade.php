@@ -26,18 +26,17 @@
                             <li><a href="/campaign/create">Create</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Ranking</a></li>
+                    <li><a href="/ranking">Ranking</a></li>
                     <li class="drop-down"><a href="/gallery">Gallery</a>
                         <ul>
                             <li><a href="/album/create">Add New</a></li>
                             <li><a href="#">List</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="/profile">Profile</a>
+                    <li class="drop-down"><a href="/profile/{{ Auth::user()->id }}">Profile</a>
                         <ul>
                             <li><a href="#">Campaigns</a></li>
-                            <li><a href="#">Offer</a></li>
-                            <li><a href="#">Settings</a></li>
+                            <li><a href="/settings">Settings</a></li>
                             <li><a href="{{ route('logout') }}">Logout</a></li>
                         </ul>
                     </li>

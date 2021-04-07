@@ -1270,6 +1270,14 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Profile Details
+--------------------------------------------------------------*/
+
+.profile-menu {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
@@ -1402,6 +1410,15 @@ section {
     color: #f1f1f1;
     padding: 10px 16px;
     display: inline-block;
+}
+
+.profile-content .pagination li.active, .pagination li:hover{
+    background: #fff;
+    border: none !important;
+}
+
+.profile-content .pagination li.active a, .pagination li:hover a{
+    color: #828;
 }
 
 /*--------------------------------------------------------------
@@ -1753,13 +1770,13 @@ section {
     background-color: #828;
 }
 
-.blog .sidebar {
+.sidebar {
     padding: 30px;
     margin: 0 0 60px 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.blog .sidebar .sidebar-title {
+.sidebar .sidebar-title {
     font-size: 20px;
     font-weight: 700;
     padding: 0 0 0 0;
@@ -1768,11 +1785,11 @@ section {
     position: relative;
 }
 
-.blog .sidebar .sidebar-item {
+.sidebar .sidebar-item {
     margin-bottom: 30px;
 }
 
-.blog .sidebar .search-form form {
+.sidebar .search-form form {
     background: #fff;
     border: 1px solid #d3cacb;
     padding: 3px 10px;
@@ -1780,13 +1797,13 @@ section {
     border-radius: 50px;
 }
 
-.blog .sidebar .search-form form input[type="text"] {
+.sidebar .search-form form input[type="text"] {
     border: 0;
     padding: 4px;
     width: calc(100% - 42px);
 }
 
-.blog .sidebar .search-form form button {
+.sidebar .search-form form button {
     position: absolute;
     border-radius: 50px;
     top: 0;
@@ -1802,58 +1819,58 @@ section {
     transition: 0.3s;
 }
 
-.blog .sidebar .search-form form button:hover {
+.sidebar .search-form form button:hover {
     background: #cc66cc;
 }
 
-.blog .sidebar .categories ul {
+.sidebar .categories ul {
     list-style: none;
     padding: 0;
 }
 
-.blog .sidebar .categories ul li + li {
+.sidebar .categories ul li + li {
     padding-top: 10px;
 }
 
-.blog .sidebar .categories ul a {
+.sidebar .categories ul a {
     color: #655356;
 }
 
-.blog .sidebar .categories ul a:hover {
+.sidebar .categories ul a:hover {
     color: #828;
 }
 
-.blog .sidebar .categories ul a span {
+.sidebar .categories ul a span {
     padding-left: 5px;
     color: #b1a0a3;
     font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item + .post-item {
+.sidebar .recent-posts .post-item + .post-item {
     margin-top: 15px;
 }
 
-.blog .sidebar .recent-posts img {
+.sidebar .recent-posts img {
     width: 80px;
     float: left;
 }
 
-.blog .sidebar .recent-posts h4 {
+.sidebar .recent-posts h4 {
     font-size: 15px;
     margin-left: 95px;
     font-weight: bold;
 }
 
-.blog .sidebar .recent-posts h4 a {
+.sidebar .recent-posts h4 a {
     color: #110e0e;
     transition: 0.3s;
 }
 
-.blog .sidebar .recent-posts h4 a:hover {
+.sidebar .recent-posts h4 a:hover {
     color: #828;
 }
 
-.blog .sidebar .recent-posts time {
+.sidebar .recent-posts time {
     display: block;
     margin-left: 95px;
     font-style: italic;
@@ -1861,20 +1878,20 @@ section {
     color: #b1a0a3;
 }
 
-.blog .sidebar .tags {
+.sidebar .tags {
     margin-bottom: -10px;
 }
 
-.blog .sidebar .tags ul {
+.sidebar .tags ul {
     list-style: none;
     padding: 0;
 }
 
-.blog .sidebar .tags ul li {
+.sidebar .tags ul li {
     display: inline-block;
 }
 
-.blog .sidebar .tags ul a {
+.sidebar .tags ul a {
     color: #8e767a;
     font-size: 14px;
     padding: 6px 14px;
@@ -1885,16 +1902,28 @@ section {
     transition: 0.3s;
 }
 
-.blog .sidebar .tags ul a:hover {
+.sidebar .tags ul a:hover {
     color: #fff;
     border: 1px solid #828;
     background: #828;
 }
 
-.blog .sidebar .tags ul a span {
+.sidebar .tags ul a span {
     padding-left: 5px;
     color: #dfd8d9;
     font-size: 14px;
+}
+
+.sidebar .info {
+    padding: 10px 0px;
+}
+
+.sidebar img{
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
 }
 
 /*--------------------------------------------------------------
