@@ -39,16 +39,22 @@
                 </div>
                 <div class="form-group">
                     <textarea class="form-control" name="description" id="description" placeholder="Description"
-                              data-msg="Please enter a valid password" rows="10"></textarea>
+                              data-msg="Please enter a valid password" rows="5"></textarea>
                     <div class="validate"></div>
                 </div>
-                <div class="form-group">
-                    <select class="form-control">
-                        <option>Category #1</option>
-                        <option>Category #2</option>
-                        <option>Category #3</option>
-                    </select>
+                <div class="file-input">
+                    <input type="file" id="file" class="file" accept="image/png, image/jpeg">
+                    <label for="file">
+                        Select file
+                    </label>
+                    <p id="filelist" class="file-name" ></p>
                 </div>
+{{--                <div class="form-group">--}}
+{{--                    <input type="file" name="file" id="file" class="inputfile" multiple="multiple"--}}
+{{--                           accept="image/png, image/jpeg"/>--}}
+{{--                    <label for="file">Choose a file</label>--}}
+{{--                    <p class="file-name"></p>--}}
+{{--                </div>--}}
                 <div class="text-center">
                     <button type="submit">Create</button>
                 </div>

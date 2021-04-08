@@ -1226,6 +1226,50 @@ section {
     }
 }
 
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.file-input label {
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    /*font-weight: bold;*/
+    cursor: pointer;
+    transition: transform .2s ease-out;
+}
+
+input:hover + label,
+input:focus + label {
+    transform: scale(1.02);
+}
+
+input:focus + label {
+    outline: 1px solid #000;
+    outline: -webkit-focus-ring-color auto 2px;
+}
+
+.file-name {
+    position: absolute;
+    bottom: 45px;
+    left: 140px;
+    font-size: 0.85rem;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /*--------------------------------------------------------------
 # Login And Register
 --------------------------------------------------------------*/
@@ -1913,7 +1957,7 @@ section {
     padding: 10px 0px;
 }
 
-.sidebar img{
+.sidebar img {
     border-radius: 10px;
     height: 200px;
     width: 100%;

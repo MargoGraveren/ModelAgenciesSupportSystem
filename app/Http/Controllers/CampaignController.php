@@ -6,6 +6,7 @@ use App\Models\Campaign;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
 
 class CampaignController extends Controller
@@ -38,11 +39,15 @@ class CampaignController extends Controller
      */
     public function store(Request $request)
     {
+        $fileName = $request->file->getClientOriginalName();
+        $image_path = Storage::disk('public')->putFileAs('campaigns', $request->file('file'), $fileName);
+
         $campaign = new Campaign();
         $campaign->title = $request->title;
         $campaign->description = $request->description;
-        $campaign->category = 'category';
-//        Auth::user()->campaign()->save($campaign);
+        $campaign->category = $request->category;
+        $campaign->photo = $image_path;
+        $campaign->user_id = Auth::id();
         $campaign->save();
 
         return redirect('campaign');
@@ -56,7 +61,7 @@ class CampaignController extends Controller
      */
     public function show(Campaign $advertisement)
     {
-        return View::make('campaign.show');
+        return View::make('campaign.campaign');
     }
 
     /**

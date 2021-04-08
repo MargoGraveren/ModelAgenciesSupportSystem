@@ -18,6 +18,9 @@ class CreateCampaignsTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('category');
+            $table->string('photo');
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

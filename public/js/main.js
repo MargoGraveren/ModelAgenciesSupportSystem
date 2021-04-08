@@ -147,8 +147,8 @@
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#filters li').on('click', function() {
+      $("#filters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
       portfolioIsotope.isotope({
@@ -170,3 +170,26 @@
     items: 1
   });
 })(jQuery);
+
+// const file = document.querySelector('#file');
+// file.addEventListener('change', (e) => {
+//     // Get the selected file
+//     const [file] = e.target.files;
+//     // Get the file name and size
+//     const { name: fileName, size } = file;
+//     // Convert size in bytes to kilo bytes
+//     const fileSize = (size / 1000).toFixed(2);
+//     // Set the text content
+//     const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+//     document.querySelector('.file-name').textContent = fileNameAndSize;
+// });
+
+document.getElementById('file').addEventListener('change', function(e) {
+    var list = document.getElementById('filelist');
+    list.innerHTML = '';
+    for (var i = 0; i < this.files.length; i++) {
+        list.innerHTML += (i + 1) + '. ' + this.files[i].name + '\n';
+    }
+    if (list.innerHTML == '') list.style.display = 'none';
+    else list.style.display = 'block';
+});

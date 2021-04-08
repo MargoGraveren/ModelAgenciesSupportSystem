@@ -11,7 +11,7 @@
                 <li><a href="/campaign">Campaigns</a></li>
                 <li><a href="/campaign">Create Campaign</a></li>
             </ol>
-            <h2>Create Campaigns</h2>
+            <h2>Create Campaign</h2>
         </div>
     </section><!-- End Breadcrumbs -->
 
@@ -27,9 +27,8 @@
 
         <div class="offset-lg-4 col-lg-4">
             <!-- Session Status -->
-            <x-auth-session-status class="mb-4" :status="session('status')"/>
 
-            <form method="POST" action="{{ url('campaign') }}" class="php-form">
+            <form method="POST" action="{{ url('campaign') }}" class="php-form" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" name="title" id="title"
@@ -43,11 +42,18 @@
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                    <select class="form-control">
-                        <option>Category #1</option>
-                        <option>Category #2</option>
-                        <option>Category #3</option>
+                    <select class="form-control" id="category" name="category">
+                        <option value="category1">Category #1</option>
+                        <option value="category2">Category #2</option>
+                        <option value="category3">Category #3</option>
                     </select>
+                </div>
+                <div class="file-input">
+                    <input type="file" id="file" class="file" name="file" accept="image/png, image/jpeg">
+                    <label for="file">
+                        Select file
+                    </label>
+                    <p id="filelist" class="file-name" ></p>
                 </div>
                 <div class="text-center">
                     <button type="submit">Create</button>
