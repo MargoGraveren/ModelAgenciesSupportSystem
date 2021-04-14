@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Album;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -25,7 +26,8 @@ class AlbumController extends Controller
      */
     public function create()
     {
-        return View::make('album.create');
+        $categories = Category::all();
+        return View::make('album.create')->with('categories', $categories);
     }
 
     /**

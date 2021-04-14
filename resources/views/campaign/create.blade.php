@@ -16,7 +16,7 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Create Campaign Form ======= -->
-    <section id="create_campaign" class="contact">
+    <section id="campaign" class="contact">
         <div class="container">
 
             <div class="section-title">
@@ -28,17 +28,17 @@
         <div class="offset-lg-4 col-lg-4">
             <!-- Session Status -->
 
-            <form method="POST" action="{{ url('campaign') }}" class="php-form" enctype="multipart/form-data">
+            <form method="POST" action="{{ url('campaign') }}" id="campaign-form" class="php-form" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" name="title" id="title"
-                           placeholder="Title" data-rule="text"
-                           data-msg="Please enter a valid title"/>
+                           placeholder="Title" data-rule="required" data-msg="Please enter a valid title."/>
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
                     <textarea class="form-control" name="description" id="description" placeholder="Description"
-                              data-msg="Please enter a valid password" rows="10"></textarea>
+                              data-rule="required"
+                              data-msg="Please enter a valid description." rows="10"></textarea>
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
@@ -50,8 +50,8 @@
                 </div>
                 <div class="form-group">
                     <input type="date" class="form-control" name="date" id="date"
-                           placeholder="Date" data-rule="date"
-                           data-msg="Please enter a valid date"/>
+                           placeholder="Date" data-rule="required"
+                           data-msg="Please enter a valid date."/>
                     <div class="validate"></div>
                 </div>
                 <div class="file-input">
@@ -61,8 +61,13 @@
                     </label>
                     <p id="filelist" class="file-name" ></p>
                 </div>
+                <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
                 <div class="text-center">
-                    <button type="submit">Create</button>
+                    <button id="create_campaign" type="submit">Create</button>
                 </div>
             </form>
         </div>

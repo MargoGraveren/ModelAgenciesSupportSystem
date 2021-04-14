@@ -25,6 +25,7 @@
                         <h3 class="sidebar-title">General</h3>
                         <hr>
                         <h6><a href="#">Account Informations</a></h6>
+                        <h6><a href="#">Personal Informations</a></h6>
                         <hr>
                         <h3 class="sidebar-title">Security</h3>
                         <hr>

@@ -2891,7 +2891,7 @@ var utils = __webpack_require__(/*! ./utils */ "./node_modules/axios/lib/utils.j
 var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ "./node_modules/axios/lib/helpers/normalizeHeaderName.js");
 
 var DEFAULT_CONTENT_TYPE = {
-  'Content-Type': 'application/x-www-php-email-form-urlencoded'
+  'Content-Type': 'application/x-www-php-form-urlencoded'
 };
 
 function setContentTypeIfUnset(headers, value) {
@@ -2931,7 +2931,7 @@ var defaults = {
       return data.buffer;
     }
     if (utils.isURLSearchParams(data)) {
-      setContentTypeIfUnset(headers, 'application/x-www-php-email-form-urlencoded;charset=utf-8');
+      setContentTypeIfUnset(headers, 'application/x-www-php-form-urlencoded;charset=utf-8');
       return data.toString();
     }
     if (utils.isObject(data)) {

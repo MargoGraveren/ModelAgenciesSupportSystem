@@ -29,7 +29,7 @@
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')"/>
 
-            <form method="POST" action="#" class="php-form">
+            <form method="POST" action="{{ url('album') }}" class="php-form" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" name="title" id="title"
@@ -41,6 +41,13 @@
                     <textarea class="form-control" name="description" id="description" placeholder="Description"
                               data-msg="Please enter a valid password" rows="5"></textarea>
                     <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="category" name="category">
+                        @foreach($categories as $category)
+                            <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="file-input">
                     <input type="file" id="file" class="file" accept="image/png, image/jpeg" multiple="multiple">

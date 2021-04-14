@@ -26,26 +26,26 @@
                 @csrf
                 <div class="form-group">
                     <input type="name" class="form-control" name="name" id="name"
-                           placeholder="Your Name" data-rule="text"
-                           data-msg="Please enter a valid name"/>
+                           placeholder="Your Name" data-rule="required"
+                           data-msg="Please enter a valid name."/>
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control" name="email" id="email"
                            placeholder="Your Email" data-rule="email"
-                           data-msg="Please enter a valid email"/>
+                           data-msg="Please enter a valid email."/>
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" id="password"
-                           placeholder="Your Password" data-rule="password"
-                           data-msg="Please enter a valid password"/>
+                           placeholder="Your Password" data-rule="minlen:8"
+                           data-msg="Please enter a valid password."/>
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password_confirmation" id="password_confirmation"
-                           placeholder="Confirm Password" data-rule="password"
-                           data-msg="Please enter a valid password"/>
+                           placeholder="Confirm Password" data-rule="minlen:8"
+                           data-msg="Please enter a valid password confirmation."/>
                     <div class="validate"></div>
                 </div>
                 <div class="text-center">

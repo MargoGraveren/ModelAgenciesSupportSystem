@@ -27,13 +27,13 @@
                 <div class="form-group">
                     <input type="email" class="form-control" name="email" id="email"
                            placeholder="Your Email" data-rule="email"
-                           data-msg="Please enter a valid email"/>
+                           data-msg="Please enter a valid email."/>
                     <div class="validate"></div>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" id="password"
-                           placeholder="Your Password" data-rule="password"
-                           data-msg="Please enter a valid password"/>
+                           placeholder="Your Password" data-rule="required"
+                           data-msg="Please enter a valid password."/>
                     <div class="validate"></div>
                 </div>
                 <!-- Remember Me -->

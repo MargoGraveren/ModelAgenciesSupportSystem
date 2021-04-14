@@ -13,7 +13,7 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Campaign Section ======= -->
-    <section id="campaign" class="campaign">
+    <section id="campaign_index" class="campaign">
         <div class="container">
 
             <div class="row">

@@ -58,7 +58,7 @@
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact php-email-form: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact php-form: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/ -->
                 Designed by <a href="#">Paulina Garbarz</a>
             </div>
         </div>
