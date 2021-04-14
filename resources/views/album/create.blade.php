@@ -43,18 +43,12 @@
                     <div class="validate"></div>
                 </div>
                 <div class="file-input">
-                    <input type="file" id="file" class="file" accept="image/png, image/jpeg">
+                    <input type="file" id="file" class="file" accept="image/png, image/jpeg" multiple="multiple">
                     <label for="file">
-                        Select file
+                        Select files
                     </label>
-                    <p id="filelist" class="file-name" ></p>
+                    <p id="filelist" class="file-name"></p>
                 </div>
-{{--                <div class="form-group">--}}
-{{--                    <input type="file" name="file" id="file" class="inputfile" multiple="multiple"--}}
-{{--                           accept="image/png, image/jpeg"/>--}}
-{{--                    <label for="file">Choose a file</label>--}}
-{{--                    <p class="file-name"></p>--}}
-{{--                </div>--}}
                 <div class="text-center">
                     <button type="submit">Create</button>
                 </div>

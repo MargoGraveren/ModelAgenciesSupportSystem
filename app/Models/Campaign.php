@@ -11,8 +11,8 @@ class Campaign extends Model
 
     protected $fillable = ['title', 'description', 'category'];
 
-//    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-//    {
-//        return $this->belongsTo('App\Models\User');
-//    }
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo('App\Models\User');
+    }
 }

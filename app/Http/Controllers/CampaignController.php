@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Campaign;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -18,7 +19,9 @@ class CampaignController extends Controller
      */
     public function index()
     {
-        return View::make('campaign.index');
+        $campaigns = Campaign::latest()->get();
+        $categories = Category::all();
+        return View::make('campaign.index')->with('campaigns', $campaigns)->with('categories', $categories);
     }
 
     /**
@@ -28,7 +31,8 @@ class CampaignController extends Controller
      */
     public function create()
     {
-        return View::make('campaign.create');
+        $categories = Category::all();
+        return View::make('campaign.create')->with('categories', $categories);
     }
 
     /**
@@ -48,6 +52,7 @@ class CampaignController extends Controller
         $campaign->category = $request->category;
         $campaign->photo = $image_path;
         $campaign->user_id = Auth::id();
+        $campaign->closed_at = $request->date;
         $campaign->save();
 
         return redirect('campaign');
@@ -56,21 +61,22 @@ class CampaignController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Models\Campaign $advertisement
+     * @param \App\Models\Campaign $campaign
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function show(Campaign $advertisement)
+    public function show($id)
     {
-        return View::make('campaign.campaign');
+        $campaign = Campaign::findOrFail($id);
+        return View::make('campaign.campaign')->with('campaign', $campaign);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Models\Campaign $advertisement
+     * @param \App\Models\Campaign $campaign
      * @return \Illuminate\Http\Response
      */
-    public function edit(Campaign $advertisement)
+    public function edit(Campaign $campaign)
     {
         //
     }
@@ -79,10 +85,10 @@ class CampaignController extends Controller
      * Update the specified resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Campaign $advertisement
+     * @param \App\Models\Campaign $campaign
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Campaign $advertisement)
+    public function update(Request $request, Campaign $campaign)
     {
         //
     }
@@ -90,10 +96,10 @@ class CampaignController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Campaign $advertisement
+     * @param \App\Models\Campaign $campaign
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Campaign $advertisement)
+    public function destroy(Campaign $campaign)
     {
         //
     }

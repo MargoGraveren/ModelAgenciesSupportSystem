@@ -43,10 +43,16 @@
                 </div>
                 <div class="form-group">
                     <select class="form-control" id="category" name="category">
-                        <option value="category1">Category #1</option>
-                        <option value="category2">Category #2</option>
-                        <option value="category3">Category #3</option>
+                        @foreach($categories as $category)
+                            <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
+                            @endforeach
                     </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" name="date" id="date"
+                           placeholder="Date" data-rule="date"
+                           data-msg="Please enter a valid date"/>
+                    <div class="validate"></div>
                 </div>
                 <div class="file-input">
                     <input type="file" id="file" class="file" name="file" accept="image/png, image/jpeg">
